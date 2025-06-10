@@ -96,16 +96,25 @@ const Hero = () => {
         <div className="staggered-reveal">
           <Profiles />
         </div>
-        <div className="staggered-reveal pt-4">
+        <div className="staggered-reveal pt-4 flex flex-wrap gap-4">
           <Button href={`#${MENULINKS[4].ref}`} classes="link" type="primary">
             Let&apos;s Talk
           </Button>
+          <Button
+            href="https://drive.google.com/drive/folders/14Zvlldd81GAma6DAdylGwqCaDaeLF8_7"
+            target="_blank"
+            rel="noopener noreferrer"
+            classes="link"
+            type="primary"
+          >
+            Resume!
+          </Button>
         </div>
       </div>
-      <div
-        className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
-        ref={lottieRef}
-      />
+     <div
+  className="absolute w-8/12 sm:w-6/12 md:w-5/12 lg:w-4/12 bottom-4 right-1/2 translate-x-1/2 sm:right-4 sm:translate-x-0 visible"
+  ref={lottieRef}
+/>
     </section>
   );
 };

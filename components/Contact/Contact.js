@@ -4,10 +4,8 @@ import toast, { Toaster } from "react-hot-toast";
 import Fade from "react-reveal/Fade";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import mail from "./mailer";
 import styles from "./Contact.module.scss";
 import { MENULINKS } from "../../constants";
-
 const filter = new Filter();
 filter.removeWords("hell", "god", "shit");
 
@@ -62,35 +60,44 @@ const Contact = () => {
     setFormData(initialState);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    const { name, email, message } = {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-    };
+  const { name, email, message } = formData;
+  if (!name || !email || !message) {
+    empty(); setMailerResponse("empty");
+    return;
+  }
 
-    if (name === "" || email === "" || message === "") {
-      empty();
-      return setMailerResponse("empty");
+  setIsSending(true);
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    });
+    const data = await res.json();
+
+    if (res.ok) {
+      setMailerResponse("success");
+      success();
+      emptyForm();
+    } else {
+      console.error("Error response:", data);
+      setMailerResponse("error");
+      error();
     }
+  } catch (err) {
+    console.error(err);
+    setMailerResponse("error");
+    error();
+  } finally {
+    setIsSending(false);
+  }
+};
 
-    setIsSending(true);
-    mail({ name, email, message })
-      .then((res) => {
-        if (res.status === 200) {
-          setMailerResponse("success");
-          emptyForm();
-        } else {
-          setMailerResponse("error");
-        }
-      })
-      .catch((err) => {
-        setMailerResponse("error");
-        console.error(err);
-      });
-  };
+
 
   useEffect(() => {
     setTimeout(() => {
