@@ -112,7 +112,7 @@ export const PROJECTS = [
   {
     name: "Appointment Management System",
     image: "/projects/HealthCare.png",
-    blurImage: "/projects/blur/medium-blur.webp",
+    blurImage: "/projects/blur/airbnb-blur.webp",
     description: "Appointment Management System using NextJS + Tailwind CSS ✍🏻",
     gradient: ["#FFA62E", "#EA4D2C"],
     url: "https://health-care-liart-two.vercel.app/",
