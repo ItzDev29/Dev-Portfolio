@@ -1,12 +1,12 @@
 export const METADATA = {
-  author: "Shubh Porwal",
-  title: "Portfolio | Shubh Porwal",
+  author: "Dev Mehta",
+  title: "Portfolio | Dev Mehta",
   description:
-    "Shubh Porwal is a passionate Frontend Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
-  siteUrl: "https://www.shubhporwal.me/",
-  twitterHandle: "@shubhporwal24",
+    "Dev Mehta is a passionate Full Stack Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
+  siteUrl: "",
+  twitterHandle: "",
   keywords: [
-    "Shubh Porwal",
+    "Dev Mehta",
     "Frontend Engineer",
     "React Native Developer",
     "Software Engineer",
@@ -44,7 +44,7 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "A pragmatic Frontend Developer",
+  "A pragmatic Full Stack Developer",
   "I build things for the web",
   "I create aesthetic and modern apps",
 ];
@@ -52,23 +52,23 @@ export const TYPED_STRINGS = [
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: shubhporwal73@gmail.com",
+    url: "mailto: devmmehta2003@gmail.com",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/shubhporwal/",
+    url: "https://www.linkedin.com/in/dev-mehta-3924bb203/",
   },
   {
     name: "github",
-    url: "https://github.com/shubh73",
+    url: "https://github.com/ItzDev29",
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/shubhii73/",
+    url: "https://www.instagram.com/dev_mehta_29?igsh=dmJuemp4cDB1cGtr",
   },
   {
     name: "twitter",
-    url: "https://x.com/shubhporwal24",
+    url: "https://www.linkedin.com/in/dev-mehta-3924bb203/",
   },
 ];
 
@@ -101,32 +101,32 @@ export const SKILLS = {
 
 export const PROJECTS = [
   {
-    name: "Airbnb",
-    image: "/projects/airbnb.webp",
+    name: "Audioglyph",
+    image: "/projects/Audioglyph.png",
     blurImage: "/projects/blur/airbnb-blur.webp",
-    description: "Airbnb UI clone using NextJS + Tailwind CSS 🛏️",
+    description: "Audioglyph using NextJS + Tailwind CSS",
     gradient: ["#F14658", "#DC2537"],
-    url: "https://shubh73-airbnb.vercel.app/",
+    url: "https://podcastr-nine-zeta.vercel.app/",
     tech: ["react", "nextjs", "tailwindcss", "mapbox"],
   },
   {
-    name: "Medium",
-    image: "/projects/medium.webp",
+    name: "Appointment Management System",
+    image: "/projects/HealthCare.png",
     blurImage: "/projects/blur/medium-blur.webp",
-    description: "Medium UI clone using NextJS + Tailwind CSS ✍🏻",
+    description: "Appointment Management System using NextJS + Tailwind CSS ✍🏻",
     gradient: ["#FFA62E", "#EA4D2C"],
-    url: "https://shubh73-medium.vercel.app/",
+    url: "https://health-care-liart-two.vercel.app/",
     tech: ["typescript", "react", "nextjs", "tailwindcss", "sanity.io"],
   },
   {
-    name: "Inshorts",
-    image: "/projects/inshorts.webp",
+    name: "AXIS'24 - Official Website",
+    image: "/projects/Axis.png",
     blurImage: "/projects/blur/airbnb-blur.webp",
     description:
-      "Conversational Voice Controlled React News Application using Alan AI 🎙",
+      "AXIS'24 using React.Js + Tailwind CSS",
     gradient: ["#000066", "#6699FF"],
-    url: "https://shubh73-inshorts.netlify.app/",
-    tech: ["react", "chakra-ui", "alan"],
+    url: "https://axis-3.vercel.app/",
+    tech: ["react", "chakra-ui", "tailwindcss"],
   },
   {
     name: "Tesla",
@@ -134,7 +134,7 @@ export const PROJECTS = [
     blurImage: "/projects/blur/tesla-blur.webp",
     description: "A Tesla React Native App 🏎️",
     gradient: ["#142D46", "#2E4964"],
-    url: "https://github.com/shubh73/tesla",
+    url: "",
     tech: ["react"],
   },
 ];
@@ -187,61 +187,39 @@ export const PROJECTS = [
 export const WORK_CONTENTS = {
   DUKAAN: [
     {
-      title: "Dukaan",
+      title: "Aonnis",
       description:
-        "Dukaan is a platform that enables businesses to launch their online stores at ease.",
+        "A SaaS platfrom which helps enterprises to manage there valky cluster using kubernates operators.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Revolutionizing commerce, one click at a time
+          Frontend Developer Intern
         </div>
       ),
     },
     {
       title: "Transformation",
       description:
-        "Since 2023, the Dukaan Seller Dashboard struggled with technical issues and a broken user experience due to accumulated technical debt. Leading a team of two junior developers, we migrated the dashboard from CSR to SSR, redesigned the UI, and overhauled the codebase in the process. This resolved the technical debt and vastly improved the user experience, making it Dukaan's largest and most impactful migration.",
+        "Developed a website for the startup AONNIS using React.js, Node.js and Tailwind CSS, enabling seamless management of Kubernetes operators with enterprise features.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Senior Frontend Engineer
+           Frontend Developer Intern
         </div>
       ),
     },
     {
       title: "Evolution",
       description:
-        "Recognizing the need for improved performance and user engagement, I spearheaded the migration of the Dukaan App from native to React-Native for iOS and Android platforms. This strategic move led to a X% enhancement in app performance and a Y% boost in user engagement, representing a significant milestone in the app's evolution.",
+        "Integrated REST APIs to fetch and display dynamic data, enhancing the functionality of user and admin dashboards for efficient cluster management.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer
+            Frontend Developer Intern
         </div>
       ),
     },
     {
       title: "Optimization",
       description:
-        "Leveraging user feedback and analytics, I improved the seller web dashboard design, reducing bounce rates. Simultaneously, I overhauled the build process, slashing bundle size and boosting overall performance.",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer Intern
-        </div>
-      ),
-    },
-  ],
-  AVIATE: [
-    {
-      title: "Aviate",
-      description:
-        "Aviate is a preparation and mentorship platform for job-seekers that are seeking non-technical roles across top companies",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Finding the right job isn&apos;t fate, it&apos;s navigation
-        </div>
-      ),
-    },
-    {
-      title: "Innovation",
-      description:
-        "I spearheaded the development of Q-Rate, their flagship product, a voice-based applicant screening platform. Moreover, I took initiatives to enhance user engagement and drive substantial increases in daily traffic. Additionally, I implemented an error-logging and bug reporting system, significantly diminishing user-reported bugs.",
+        "Designed and implemented responsive dashboards, including a user dashboard and admin dashboard, to streamline the monitoring and management of valkey clusters.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
           Frontend Developer Intern
@@ -249,28 +227,60 @@ export const WORK_CONTENTS = {
       ),
     },
   ],
-  SPACENOS: [
+  AVIATE: [
     {
-      title: "Spacenos",
+      title: "AXIS'24",
       description:
-        "A dynamic startup dedicated to creating innovative products that make the world a better place.",
+        "Official technical fest of VNIT - Nagpur.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          We build apps that solve problems for the next billion people
+          Spearheaded the development of two high-traffic websites using a versatile MERN stack.
         </div>
       ),
     },
     {
-      title: "Trailblazing",
+      title: "Innovation",
       description:
-        "I led the comprehensive overhaul of the Admin Portal, implementing CRUD features for all services and providers. Additionally, I architected a feature enabling precise customer location tracking and delivering insightful usage statistics. Through optimized and compressed file serving, I catalyzed a remarkable Yx increase in page speed, resulting in a X% boost in customer retention.",
+        "Built & led AXIS'24 Official website with user-friendly features (authentication, User profiles, User Registration), that resulted in a 14,000+ user influx, boosting engagement & showcasing tech leadership.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Web Developer Intern
+           Lead a team of 8 people 
         </div>
       ),
     },
+    {
+      title: "Optimization",
+       description:
+         "Tech stack including Next.js and Tailwind CSS for the frontend, and MongoDB, Express.js, and Node.js for the backend, affirming expertise in comprehensive MERN stack development.",
+       content: (
+         <div className="h-full w-full flex items-center justify-center text-white px-4">
+          Tech Lead
+       </div>
+       ),
+     },
   ],
+  // SPACENOS: [
+  //   {
+  //     title: "Spacenos",
+  //     description:
+  //       "A dynamic startup dedicated to creating innovative products that make the world a better place.",
+  //     content: (
+  //       <div className="h-full w-full flex items-center justify-center text-white px-4">
+  //         We build apps that solve problems for the next billion people
+  //       </div>
+  //     ),
+  //   },
+  //   {
+  //     title: "Trailblazing",
+  //     description:
+  //       "I led the comprehensive overhaul of the Admin Portal, implementing CRUD features for all services and providers. Additionally, I architected a feature enabling precise customer location tracking and delivering insightful usage statistics. Through optimized and compressed file serving, I catalyzed a remarkable Yx increase in page speed, resulting in a X% boost in customer retention.",
+  //     content: (
+  //       <div className="h-full w-full flex items-center justify-center text-white px-4">
+  //         Web Developer Intern
+  //       </div>
+  //     ),
+  //   },
+  // ],
 };
 
 export const GTAG = "G-5HCTL2TJ5W";

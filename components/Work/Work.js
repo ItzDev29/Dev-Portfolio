@@ -11,7 +11,7 @@ const Work = ({ isDesktop }) => {
   const tabItems = useMemo(
     () => [
       {
-        title: "Dukaan",
+        title: "Aonnis",
         value: "dukaan",
         content: (
           <StickyScroll
@@ -21,7 +21,7 @@ const Work = ({ isDesktop }) => {
         ),
       },
       {
-        title: "Aviate",
+        title: "AXIS'24",
         value: "Aviate",
         content: (
           <StickyScroll
@@ -30,16 +30,16 @@ const Work = ({ isDesktop }) => {
           />
         ),
       },
-      {
-        title: "Spacenos",
-        value: "spacenos",
-        content: (
-          <StickyScroll
-            isDesktop={isDesktop}
-            contentItems={WORK_CONTENTS.SPACENOS}
-          />
-        ),
-      },
+      // {
+      //   title: "Spacenos",
+      //   value: "spacenos",
+      //   content: (
+      //     <StickyScroll
+      //       isDesktop={isDesktop}
+      //       contentItems={WORK_CONTENTS.SPACENOS}
+      //     />
+      //   ),
+      // },
     ],
     [isDesktop]
   );
