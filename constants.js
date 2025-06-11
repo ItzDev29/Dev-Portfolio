@@ -187,7 +187,7 @@ export const PROJECTS = [
 export const WORK_CONTENTS = {
   DUKAAN: [
     {
-      title: "Aonnis",
+      title: "AONNIS",
       description:
         "A SaaS platfrom which helps enterprises to manage there valky cluster using kubernates operators.",
       content: (

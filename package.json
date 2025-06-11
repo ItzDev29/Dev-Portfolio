@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@netlify/plugin-nextjs": "^5.11.2",
     "@next/third-parties": "^14.2.13",
     "bad-words": "^3.0.4",
     "clsx": "^2.1.1",
